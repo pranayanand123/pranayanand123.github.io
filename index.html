@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Pranay Anand's Personal Blog and Project Website">
+    <meta name="keywords" content="Pranay Anand, Personal Website, Personal Blog, Blogs, Project Website, Portfolio">
+    <meta name="author" content="Pranay Anand">
+    <link rel="icon" href="images/favicon.png">
+        <!-- Open Graphic Tags -->
+    <meta property="fb:app_id" content="" />
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Pranay Anand's Personal Blog and Project Website">
+    <meta property="og:image" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="icon" type="image/png" href="" sizes="32x32">
+    <link rel="icon" type="image/png" href="" sizes="16x16">
+    <link rel="shortcut icon" href="">
+    <meta name="theme-color" content="#000000">
+  <title>Pranay Anand | Portfolio | Personal Blogs and Projects</title>
+
+  <!-- CSS files -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/imjog/github-calendar/gh-pages/dist/github-calendar.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108089911-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108089911-1');
+</script>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="display: -webkit-inline-box;" href="#">
+        <span class="tag-name">Pranay &nbsp;Anand</span></a>
+    </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a>About Me</a></li>
+      <li><a href="./projects">Projects</a></li>
+      <li><a href="./blogs">Blogs</a></li>
+      <li><a href="./jogendra_resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+</div>
+  </div>
+</nav>
+<!-- / Navbar -->
+<!-- Landing page container -->
+<div class="container landing-page parallax" style="padding-top:50px" id="home-section">
+  <div></div>
+  <div class="title-name">
+    <img src="images/jogendra_nepal.JPG" class="title-image" height="100" width="100">
+    <h2>Pranay Anand</h2>
+  <hr>
+  <h4 class="typing-tags">A Developer and Open Source Enthusiast</h4>
+  <div>
+</div>
+<div class="social-icons">
+<a href="https://github.com/jogendra" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+<a href="https://www.linkedin.com/in/jogendrasingh24/" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+<a href="https://twitter.com/imjog24" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+<a href="https://www.quora.com/profile/Jogendra-Singh-63" target="_blank"><i class="fa fa-quora fa-3x"></i></a>
+</div>
+<!-- GitHub Contribution Graph -->
+<!-- <div class="github-graph"> -->
+  <!-- Include the library. -->
+  <!-- <script
+    src="https://cdn.rawgit.com/imjog/github-calendar/gh-pages/dist/github-calendar.min.js"
+  ></script> -->
+
+  <!-- Prepare a container for your calendar. -->
+  <!-- <div class="calendar">
+
+      Loading the GitHub Contribution data just for you.
+  </div>
+
+  <script>
+      GitHubCalendar(".calendar", "imjog");
+  </script>
+  </div> -->
+  <!-- /GitHub Contribution Graph -->
+</div>
+</div>
+
+  <!-- Javascript files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  $(function(){
+  $(".dropdown").hover(
+          function() {
+              $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+              $(this).toggleClass('open');
+              $('b', this).toggleClass("caret caret-up");
+          },
+          function() {
+              $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+              $(this).toggleClass('open');
+              $('b', this).toggleClass("caret caret-up");
+          });
+  });
+  </script>
+  <script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+});
+});
+</script>
+<!-- Parallax Effect -->
+<script>
+</body>
+</html>
