@@ -1,0 +1,414 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+
+body{
+  background-color: #000;
+}
+a{
+  color:#fff;
+}
+a:hover{
+  color:#fff;
+}
+.landing-page{
+    background-color: rgba(0,0,0,.5);
+    background-image: url(../images/banner.jpg);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    color: #999;
+}
+@media screen and (max-width:768px){
+  .landing-page{
+  background-image: url(../images/banner-mob.jpg);
+}
+}
+.title-name{
+    left: 0;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+.title-name h2{
+  font-size: 200%;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.title-name h4{
+  font-size: 60%;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+@media screen and (min-width:768px){
+  .title-name h4{
+    font-size: 100%;
+    letter-spacing: 5px;
+  }
+}
+.title-name hr{
+  width: 25%;
+}
+
+.disabledLink{
+  cursor: not-allowed;
+}
+
+.open > .dropdown-menu {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity:1;
+}
+
+.dropdown-menu {
+  opacity:.3;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-transform: scale(1, 0);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+/* Social Icons*/
+.social-icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.social-icons a{
+    /*padding: 0.6%;*/
+    margin: 1%;
+    color: #999;
+}
+.social-icons a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+@media screen and (max-width:768px){
+  .fa-3x{
+    font-size: 2em;
+    padding: 2px;
+  }
+  .social-icons a {
+    color: rgba(255,255,255,0.8);
+  }
+}
+/* ABOUT ME SECTION */
+.about-me{
+  color: #333;
+  /*height: 100vh;*/
+  width: 100%;
+  background-color: rgba(0,0,0,.9);
+  background-image: url(../images/iosdeveloper.png);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+@media screen and (max-width:768px){
+  .about-me{
+  background-image: url(../images/iosdeveloper-mob.png);
+}
+}
+.navbar-inverse{
+  background-color: rgba(0,0,0,0.2);
+  text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.fa-angle-double-down, .fa-terminal, .fa-angle-down, .fa-angle-double-up{
+  margin: 3% auto;
+  margin-bottom: 1%;
+      display: table;
+      color: white;
+}
+.section-header{
+  padding-top: 50px;
+margin: 0 auto;
+display: table;
+color: white;
+text-transform: uppercase;
+letter-spacing: 5px;
+font-weight: 300;
+}
+.section-hr{
+  border-top: 1px solid rgba(255,255,255,0.4);
+}
+.about-me-description{
+  color: #999;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding: 3%;
+    margin: auto;
+    display: table;
+    width: 100%;
+    font-size: 110%;
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+@media screen and (min-width:768px){
+  .about-me-description{
+    width: 75%;
+  }
+}
+
+/* Projects section */
+.projects{
+  color: #333;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.7);
+  background-image: url(../images/projects-bcg.jpg);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.section-end-hr{
+  margin: 0;
+border: 0;
+border-top: 1px solid rgba(255,255,255,.2);
+border-bottom: 1px solid rgba(255,255,255,.2);
+padding: 1px;
+}
+
+
+/* blog section */
+.blogs{
+  color: #333;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  background-image: url(../images/blog-bcg.png);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+}
+@media screen and (max-width:768px){
+  .projects{
+  background-image: url(../images/projects-bcg-mob.jpg);
+}
+.blogs{
+background-image: url(../images/blog-bcg-mob.png);
+}
+}
+
+/* Skills Div */
+.skills_div{
+  color: #999;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: auto;
+  display: table;
+  font-size: 100%;
+  width: 100%;
+}
+@media screen and (min-width:768px){
+  .skills_div{
+    padding-left: 25%;
+  }
+}
+.skills_div li{
+padding: 1%;
+text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 110%;
+}
+.skills_div li p{
+padding: 2%;
+}
+.skills_div span{
+      padding: 1%;
+      border: 1px solid #999;
+      margin: 1%;
+      border-radius: 5px;
+      background: rgba(255,255,255,0.2);
+      transition: 0.3s;
+}
+.skills_div span:hover{
+  background: black;
+  color: white;
+}
+
+/* Projects Div */
+.projects_div{
+  color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+}
+.project_subdiv{
+    width: 100%;
+    border: 1px solid white;
+    margin: 1%;
+    height: 300px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: multiply;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    background-size: contain;
+}
+.project_subdiv h3{
+  text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 4px;
+      font-size: medium;
+      background: rgba(0,0,0,.5);
+      padding: 3%;
+      box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.3);
+}
+.project_subdiv p{
+  font-weight: 300;
+      letter-spacing: 2px;
+      padding: 2%;
+      height: 150px;
+      overflow: scroll;
+}
+.project_subdiv a p span{
+  padding: 2%;
+    border: 1px solid;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+@media screen and (min-width:768px){
+  .projects_div{
+flex-direction: row;
+  }
+  .project_subdiv{
+width: 33.333%;
+  }
+}
+
+/* Blogs Div */
+.blogs_div{
+  color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+}
+.blogs_subdiv{
+    width: 100%;
+    border: 1px solid white;
+    margin: 1%;
+    height: 320px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+.blogs_subdiv h3{
+  text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 4px;
+      font-size: medium;
+      padding: 1%;
+}
+.blogs_subdiv p{
+  font-weight: 300;
+      letter-spacing: 2px;
+      padding: 1%;
+}
+.blogs_subdiv a p span{
+  padding: 2%;
+    border: 1px solid;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.blogs_subdiv hr{
+  border: 1px solid rgba(255,255,255,0.3);
+  width: 50%;
+}
+.blogs_subdiv img{
+  height: 100px;
+width: 100px;
+border-radius: 50%;
+border: 1px solid rgba(255,255,255,0.5);
+}
+.blogs_subdiv p span{
+  padding: 1%;
+}
+.tags-div{
+  margin-top: 1%;
+}
+.fa-paperclip, .fa-calendar{
+  font-size: 20px;
+}
+@media screen and (min-width:768px){
+  .blogs_div{
+flex-direction: row;
+  }
+  .blogs_subdiv{
+width: 33.333%;
+  }
+}
+
+.title-image {
+  border: 3px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: table;
+  padding: 3px;
+}
+
+.tag-name {
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-family: "Pacifico", cursive;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: rgba(255,255,255,0.9);
+}
+
+/* GitHub Calender */
+.github-graph {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .github-graph {
+    display: block;
+  }
+}
+
+.contrib-number {
+  color: #ffffff;
+}
+
+.text-muted {
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+.calendar-graph text.wday, .calendar-graph text.month {
+  fill: #bbb;
+  letter-spacing: 1px;
+}
+.float-left.text-gray {
+  letter-spacing: 1px;
+}
